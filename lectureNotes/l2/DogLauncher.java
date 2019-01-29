@@ -3,7 +3,7 @@ public class DogLauncher {
 		Dog d1 = new Dog(20);
 		Dog d2 = new Dog(8);
 
-		Dog maxdog = Dog.maxDog(d1,d2);
+		Dog maxdog = d1.maxDog(this,d2);
 		maxdog.makeNoise();
 	}
 }
