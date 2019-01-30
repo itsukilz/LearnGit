@@ -66,4 +66,10 @@ public class IntListTest {
         assertEquals(IntList.of(1, 2, 3), A);
     }
 
+    @Test
+    public void testCopy() {
+        IntList A = IntList.of(1, 2, 3);
+        IntList exp = IntList.of(1, 2, 3);
+        assertEquals(exp, IntList.copy(A));
+    }
 }
