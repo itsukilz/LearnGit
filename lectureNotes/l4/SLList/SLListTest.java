@@ -57,4 +57,13 @@ public class SLListTest {
         p.print();
         //expect 3
     }
+
+    /** test sentinelNode when SLList is null */
+    @Test
+    public void testSentinelNode() {
+        SLList p = new SLList();
+        p.addLast(3);
+        p.print();
+        //expect 3
+    }
 }
